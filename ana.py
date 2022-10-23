@@ -1,13 +1,9 @@
 import speech_recognition as sr
 import pyttsx3
-from pydub.playback import play
 import json
 import openmodule
 
-
-
-
-ABRIR_CAMINHO = "comand.json"
+ABRIR_CAMINHO = "comands.json"
 r = sr.Recognizer()
 tts_engine = pyttsx3.init()
 #audio = []
@@ -18,7 +14,7 @@ def interprete():
         comandos = json.load(commands_file)
         audio = comandos["comandos"]
         
-interprete()
+
 
 
 def speak(text):
@@ -30,15 +26,16 @@ def speak(text):
 
 
 def listen():
+    interprete()
     
-    play()
+    # play()
     
     with sr.Microphone() as fontes:
         fala = r.listen(fontes, None, 5)
         voice_data = ""
         
         try:
-            voice_data = r.recognize_google(fala, languagem="pt-BR").lower()
+            voice_data = r.recognize_google(fala, language="pt-BR").lower()
             
         except sr.UnknownValueError:
             speak("desculpa, nao entendi:")
