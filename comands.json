@@ -1,0 +1,34 @@
+{
+    "comandos":[
+        {
+            "abrir":[
+                { "recarregar comando": "comandos" },
+                { "recarregar comandos": "comandos" },
+                { "recarregue os comandos": "comandos" },
+                { "recarregar os comandos": "comandos" },
+        
+                {"abrir o navegador": "path:C:/Program Files/Google/Chrome/Application/chrome.exe"},
+
+                {"pesquisar sobre *": "web?:https://google.com"},
+                {"pesquisar por *": "web?:https://google.com"},
+                {"pesquise por *": "web?:https://google.com"},
+                {"pesquise como *": "web?:https://google.com"},
+                {"procure por *": "web?:https://google.com"},
+                {"pesquise os *": "web?:https://google.com"},
+
+                {"busque * ": "web?:https://google.com"},
+                {"buscar *":"web?:https://google.com"},
+                {"buque por *": "web?:https://google.com"},
+                {"buscar por *": "web?:https://google.com"},
+                
+                {"mostre *": "web?:https://google.com"},
+                {"me mostre *": "web?:https://google.com"}
+            ]
+        }, 
+        {"fechar":[
+            {"fechar o navegador": "path:C:/Program Files/Google/Chrome/Application/chrome.exe"}
+        ]
+
+        }
+    ]
+}
