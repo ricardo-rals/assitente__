@@ -9,8 +9,8 @@
         
                 {"abrir o navegador": "path:C:/Program Files/Google/Chrome/Application/chrome.exe"},
 
-                {"pesquisar sobre *": "web?:https://google.com"},
-                {"pesquisar por *": "web?:https://google.com"},
+                {"pesquisa sobre *": "web?:https://google.com"},
+                {"pesquisa por *": "web?:https://google.com"},
                 {"pesquise por *": "web?:https://google.com"},
                 {"pesquise como *": "web?:https://google.com"},
                 {"procure por *": "web?:https://google.com"},

@@ -1,6 +1,6 @@
 from time import sleep
 import speech_recognition as sr
-# import keyboard
+import keyboard
 import ana
 
 r = sr.Recognizer()
@@ -28,8 +28,7 @@ def interprete_microphone():
                 ana.listen()
                 break
 
-
-# while True:
-#    interprete_microphone()
+    #while True:
+     #       interprete_microphone()
 if __name__ == "__main__":
     interprete_microphone()

@@ -66,9 +66,9 @@ def run_comandos(tipo_comando, comando_ativo, argumentos):
 
 
 def extract_argumentos(comando_texto, comando_voz):
-    splitted_text = comando_texto.split(comando_voz.replace('*', ' '), 1)
+    splitted_text = comando_texto.split(comando_voz.replace("*", ""), 1)
     
-    argumentos = ' '
+    argumentos = ""
     
     if len(splitted_text) > 1:
         argumentos = splitted_text[1]
@@ -82,17 +82,18 @@ def comando_ok(comando_texto):
       for comando_select, comandos in comando_lista.items():
         for index, comando in enumerate(comandos):
          for comando_voz, comando_ativo in comando.items():
-            argumentos = " "
+            argumentos = ""
             
             
-            if '#' in comando_voz:
-                argumentos = openmodule.extract_argumentos
+            #if '*' in comando_voz:
+             #   argumentos = openmodule.extract_argumentos
             
                         
             if "*" in comando_voz:
+              
               argumentos = extract_argumentos(comando_texto, comando_voz)
                             
-              comando_voz = comando_voz.replace('*', argumentos)
+              comando_voz = comando_voz.replace("*", argumentos)
                             
             found_action = ok_comando_master(comando_voz, comando_texto)
                             
